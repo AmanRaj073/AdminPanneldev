@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 1 - Add Category</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Sidebar -->
+    <%- include ("./Layout/sidebar") %>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                
+                <!-- Topbar -->
+                <%- include("./Layout/navbar")%>
+                <!-- End of Topbar -->
+                <div class="col-md-6 offset-md-3 mt-5">
+                </a>
+                <!-- Page Heading -->
+            <h1 class="h3 mb-2 text-gray-800">User</h1>
+            <a href="/adduser" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-arrow-left fa-sm text-white-50"></i> Back To Form</a>
+            <hr>
+                        
+                        <h1>Add Category</h1>
+                        <!-- <select class="form-group mt-3" aria-label="Default select example" name="position">
+                                <option value="1">Admin</option>
+                                <option value="2">User</option>
+                            </select> -->
+                        <form accept-charset="UTF-8" action="/storecat" method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName">Name</label>
+                                <input type="text" name="position" class="form-control" id="exampleInputName"
+                                    placeholder="Enter your name and surname" required="required">
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+
+
+
+                    <!-- End of Main Content -->
+
+                    <!-- Logout Modal-->
+                    <%- include("./Layout/logout")%>
+
+                        <!-- Footer -->
+                        <%- include("./Layout/footer")%>
